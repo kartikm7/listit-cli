@@ -6,10 +6,14 @@ import (
 	"os"
 
 	"github.com/kartikm7/listit-cli/internals/commands"
+	"github.com/kartikm7/listit-cli/internals/db"
 	"github.com/urfave/cli/v3"
 )
 
 func main() {
+	// initializing the db first
+	db.Init()
+
 	cmd := &cli.Command{
 		Commands: []*cli.Command{
 			{
