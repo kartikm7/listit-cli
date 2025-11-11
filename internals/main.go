@@ -21,6 +21,11 @@ func main() {
 				Description: "list it as in your task down",
 				Usage:       "pass a string as an argument",
 				Action:      commands.It,
+			}, {
+				Name:        "status",
+				Description: "shows the list of all tasks",
+				Usage:       "just type the command thats it",
+				Action:      commands.Status,
 			},
 		},
 	}
